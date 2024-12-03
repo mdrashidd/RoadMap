@@ -1,0 +1,106 @@
+*{
+    padding: 0%;
+    margin : 0px;
+}
+body{
+    border:2px solid black;
+    
+}
+.main{
+    
+    height: 200px;
+    width: 100%;
+    border: 1px solid black;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    margin-top: 10px;
+   
+}
+nav{
+    margin-right: 10px;
+    font-weight: 700;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    height: 10%;
+    width: 10%;
+}
+
+.name{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+}
+.banner{
+   
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero{
+    display: flex;
+    text-align: start;
+    
+}
+.hero .box1,.box2,.box3{ 
+    display: flex;
+    flex-direction: column;
+    
+     width: 33.2%;
+     height:300px;
+     justify-content: space-between;
+     
+}
+.box1 > div, .box2 > div, .box3 > div {
+    flex-grow: 1; 
+}
+.hero div{
+    border: 1px solid black;
+}
+.heading {
+    font-family:cursive;
+    font-weight: 400;
+    font-size: 20px;
+}
+p,h3,a {
+padding:0px 20px 0px 20px;
+display: flex;
+justify-content: center;
+align-self: center;
+
+}
+a{
+    color:blue;
+    font-weight: 100;
+}
+.reviews{
+    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.reviews .reviewbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25%;
+    border: 2px solid black;
+     width: 25%;
+     height:200px;
+     margin: 20px;
+}
+.lessvisible{
+    opacity: 0.5;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
