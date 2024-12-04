@@ -1,13 +1,12 @@
 *{
     padding: 0%;
     margin : 0px;
+    box-sizing: border-box;
 }
 body{
     border:2px solid black;
-    
 }
-.main{
-    
+.main{ 
     height: 200px;
     width: 100%;
     border: 1px solid black;
@@ -18,24 +17,22 @@ body{
     align-items: center;
     height: 10%;
     margin-top: 10px;
-   
+}
+.navigation div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 nav{
     margin-right: 10px;
     font-weight: 700;
 }
-.icon{
-    display: flex;
+i{
     justify-content: center;
-    border: 1px solid black;
+    padding-left: 30px;
+    display: flex;
     height: 10%;
     width: 10%;
-}
-
-.name{
-    display: flex;
-    justify-content: space-evenly;
-    width: 20%;
 }
 .banner{
    
@@ -81,6 +78,9 @@ a{
     color:blue;
     font-weight: 100;
 }
+a:hover {
+    text-decoration: underline;
+  }  
 .reviews{
     display: flex;
    flex-direction: row;
@@ -104,3 +104,45 @@ footer{
     display: flex;
     justify-content: center;
 }
+@media screen and (max-width: 500px) {
+    .navigation{
+        justify-content: left;
+        flex-direction: column;
+        width: 100%;;
+    }
+    .navigation div{
+        flex-direction: column;
+    }
+    .hero .box1, .box2, .box3 {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+    }
+    .hero{
+        flex-direction: column;
+        height: auto;
+    }
+   .reviews .reviewbox{
+        width: 80%;
+        height: 200px;
+    }
+    .reviews {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    i{
+        width: 100%;
+    }
+    .main{
+        height: 300px;
+    }
+   
+  }
+
+  @media screen and (min-width: 499px) and (max-width: 750px) {
+    .hero .box1, .box2, .box3 {
+       height:500px;
+      }
+  }
+  
